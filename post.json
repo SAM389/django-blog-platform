@@ -1,0 +1,128 @@
+[
+    {
+      "title": "My Updated Post",
+      "content": "My first updated post!\r\n\r\nThis is exciting!",
+      "user_id": 1
+    },
+    {
+      "title": "A Second Post",
+      "content": "This is a post from a different user...",
+      "user_id": 2
+    },
+    {
+      "title": "Top 5 Programming Languages",
+      "content": "Exploring the top 5 programming languages! Here are some key highlights and features of each. Stay tuned for more.",
+      "user_id": 1
+    },
+    {
+      "title": "Sublime Text Tips and Tricks",
+      "content": "Discover some of the best tips and tricks for using Sublime Text. From shortcuts to plugins, elevate your coding experience!",
+      "user_id": 1
+    },
+    {
+      "title": "Best Python IDEs",
+      "content": "Looking for the best Python IDEs? We've rounded up the top options to improve your coding workflow.",
+      "user_id": 1
+    },
+    {
+      "title": "Flask vs Django - Which Is Better?",
+      "content": "Comparing Flask and Django: two powerful Python frameworks. Explore their strengths and decide which is right for you.",
+      "user_id": 2
+    },
+    {
+      "title": "You Won't Believe These Clickbait Titles!",
+      "content": "Clickbait titles grab attention, but do they deliver? Learn how to write catchy yet meaningful headlines.",
+      "user_id": 2
+    },
+    {
+      "title": "These Beers Will Improve Your Programming",
+      "content": "Believe it or not, some programmers swear by pairing beer with coding. Here’s a fun look at the idea.",
+      "user_id": 1
+    },
+    {
+      "title": "List of PyCon 2018 Talks",
+      "content": "A comprehensive list of PyCon 2018 talks, covering diverse Python topics. Don't miss these highlights!",
+      "user_id": 1
+    },
+    {
+      "title": "How Dogs in the Workplace Boost Productivity",
+      "content": "Studies show that having dogs in the office can improve morale and productivity. Here’s why it works.",
+      "user_id": 1
+    },
+    {
+      "title": "The Best Programming Podcasts",
+      "content": "Explore the best programming podcasts that keep you informed and inspired while coding.",
+      "user_id": 1
+    },
+    {
+      "title": "Tips for Public Speaking",
+      "content": "Nervous about public speaking? Learn these key tips to boost your confidence and deliver effectively.",
+      "user_id": 2
+    },
+    {
+      "title": "Best Programmers Throughout History",
+      "content": "A tribute to the greatest programmers in history and their lasting impact on technology.",
+      "user_id": 2
+    },
+    {
+      "title": "How To Create A YouTube Channel",
+      "content": "Starting a YouTube channel? Here’s a step-by-step guide to help you get started with ease.",
+      "user_id": 2
+    },
+    {
+      "title": "How I Record My Videos",
+      "content": "Take a behind-the-scenes look at how I record my videos, from setup to final edits.",
+      "user_id": 1
+    },
+    {
+      "title": "Python and Physics",
+      "content": "Exploring how Python is used in physics research and education. Dive into the synergy of science and code!",
+      "user_id": 1
+    },
+    {
+      "title": "Just A Few More Headlines Should Do It",
+      "content": "Creating headlines is an art. Here are a few more examples to inspire your next great title.",
+      "user_id": 1
+    },
+    {
+      "title": "Music To Listen To While Coding",
+      "content": "Looking for the perfect playlist to code to? Check out these tunes that keep you focused and motivated.",
+      "user_id": 1
+    },
+    {
+      "title": "5 Tips for Writing Catchy Headlines",
+      "content": "Learn how to write headlines that grab attention and increase engagement.",
+      "user_id": 2
+    },
+    {
+      "title": "The Rise of Data Science",
+      "content": "Data science is shaping industries worldwide. Discover how it’s making an impact and what’s next.",
+      "user_id": 2
+    },
+    {
+      "title": "Best Videos For Learning Python",
+      "content": "Want to learn Python? Here’s a list of the best video tutorials to get you started.",
+      "user_id": 1
+    },
+    {
+      "title": "Top 10 Python Tips and Tricks",
+      "content": "Discover 10 useful Python tips and tricks that can make your coding faster and more efficient.",
+      "user_id": 1
+    },
+    {
+      "title": "Top 5 YouTube Channels For Learning Programming",
+      "content": "Looking for programming tutorials? Check out these top 5 YouTube channels for amazing content.",
+      "user_id": 2
+    },
+    {
+      "title": "My Latest Updated Post",
+      "content": "Here’s my latest post with updates and fresh insights. Stay tuned for more exciting content!",
+      "user_id": 1
+    },
+    {
+      "title": "My last post",
+      "content": "kam likhne ka",
+      "user_id": 1
+    }
+  ]
+  

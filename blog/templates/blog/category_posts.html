@@ -1,0 +1,54 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="mb-4">Posts in {{ category|title }}</h2>
+            {% for post in posts %}
+                <article class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h3 class="card-title h4 mb-0">
+                                <a href="{% url 'post-detail' post.pk %}" class="text-decoration-none text-dark">
+                                    {{ post.title }}
+                                </a>
+                            </h3>
+                            <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+                        </div>
+                        <p class="card-text">{{ post.content|truncatewords:50 }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle mr-2" src="{{ post.author.profile.image.url }}" width="30" height="30">
+                                <a href="{% url 'user-posts' post.author.username %}" class="text-decoration-none text-dark">
+                                    {{ post.author.username }}
+                                </a>
+                            </div>
+                            {% if user.is_authenticated %}
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-sm btn-outline-primary like-btn" data-post-id="{{ post.pk }}">
+                                    <i class="fas fa-heart {% if user in post.likes.all %}text-danger{% endif %}"></i>
+                                    <span class="like-count">{{ post.likes.count }}</span>
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary bookmark-btn {% if user in post.bookmarks.all %}bookmarked{% endif %}" data-post-id="{{ post.pk }}">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            {% empty %}
+                <div class="alert alert-info">
+                    No posts found in this category.
+                </div>
+            {% endfor %}
+
+            {% if is_paginated %}
+                {% include 'blog/pagination.html' %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

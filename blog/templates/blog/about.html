@@ -1,0 +1,147 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block title %}About - AI Blog{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="py-5 mt-5" style="background: linear-gradient(135deg, #f0f9ff, #e6ffe6); position: relative; overflow: hidden;">
+    <div class="container py-5 text-center position-relative">
+        <div class="position-absolute" style="top: 0; right: 0; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%); transform: translate(30%, -30%);"></div>
+        <h1 class="section-title mb-4" style="font-size: 3.5rem; font-weight: 800; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); animation: fadeInDown 1s ease;">About Our Journey</h1>
+        <p class="lead mb-5" style="font-size: 1.4rem; color: #34495e; max-width: 800px; margin: 0 auto; animation: fadeInUp 1s ease 0.3s; animation-fill-mode: both;">
+            Empowering minds through technology and innovation – one article at a time.
+        </p>
+    </div>
+</section>
+
+<!-- Content Sections -->
+<section class="py-5" style="background: #f9f9f9; position: relative; top: -50px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    <div class="container">
+        <!-- Mission Section -->
+        <div class="card mb-5" style="border: none; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transform: translateY(0); transition: transform 0.3s ease; animation: fadeInUp 1s ease 0.5s; animation-fill-mode: both;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-rocket me-3" style="font-size: 2rem; color: #3498db;"></i>
+                    <h3 class="card-title m-0" style="font-weight: 700; color: #34495e;">Our Mission</h3>
+                </div>
+                <p class="card-text" style="line-height: 1.8; color: #555;">
+                    At Django Blog, we're passionate about democratizing knowledge in AI and technology. Our mission is to transform complex concepts into clear, actionable insights that inspire and educate. Through carefully crafted content, we bridge the gap between innovation and understanding.
+                </p>
+            </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="card mb-5" style="border: none; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transform: translateY(0); transition: transform 0.3s ease; animation: fadeInUp 1s ease 0.7s; animation-fill-mode: both;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-lightbulb me-3" style="font-size: 2rem; color: #f1c40f;"></i>
+                    <h3 class="card-title m-0" style="font-weight: 700; color: #34495e;">Our Vision</h3>
+                </div>
+                <p class="card-text" style="line-height: 1.8; color: #555;">
+                    We envision a future where technology empowers everyone. Through our platform, we're building a bridge between cutting-edge innovation and practical application, creating a space where curiosity meets expertise, and where everyone can be part of the tech revolution.
+                </p>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="card" style="border: none; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transform: translateY(0); transition: transform 0.3s ease; animation: fadeInUp 1s ease 0.9s; animation-fill-mode: both;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-star me-3" style="font-size: 2rem; color: #e74c3c;"></i>
+                    <h3 class="card-title m-0" style="font-weight: 700; color: #34495e;">Our Values</h3>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2" style="color: #2ecc71;"></i>
+                            <div>
+                                <h5 style="color: #34495e; font-weight: 600;">Innovation</h5>
+                                <p style="color: #555; margin-bottom: 0;">Pushing boundaries with cutting-edge insights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2" style="color: #2ecc71;"></i>
+                            <div>
+                                <h5 style="color: #34495e; font-weight: 600;">Accessibility</h5>
+                                <p style="color: #555; margin-bottom: 0;">Making complex topics understandable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2" style="color: #2ecc71;"></i>
+                            <div>
+                                <h5 style="color: #34495e; font-weight: 600;">Community</h5>
+                                <p style="color: #555; margin-bottom: 0;">Fostering collaboration and learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2" style="color: #2ecc71;"></i>
+                            <div>
+                                <h5 style="color: #34495e; font-weight: 600;">Excellence</h5>
+                                <p style="color: #555; margin-bottom: 0;">Delivering quality in every article</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Founders Section -->
+<section class="py-5" style="background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%); position: relative;">
+    <div class="container text-center">
+        <h2 class="mb-5" style="font-size: 2.5rem; font-weight: 800; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Meet Our Founders</h2>
+        <div class="row justify-content-center">
+            <!-- Founder 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: translateY(0); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body p-4">
+                        <div class="position-relative mb-4">
+                            <img src="{% static 'blog/images/safwan.jpeg' %}" alt="Safwan" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </div>
+                        <h4 class="mb-2" style="font-weight: 700; color: #34495e;">Safwan</h4>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">Co-Founder & Tech Lead</p>
+                        <p class="mb-4" style="color: #555; font-size: 0.95rem;">As the Co-founder of WriteAway, I design and manage the Django backend, crafting scalable solutions to deliver a seamless user experience while sharing valuable insights with the developer community.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://github.com/SAM389" target="_blank" class="btn btn-light" style="border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-github" style="color: #333;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/safwan-khan-002806204/" target="_blank" class="btn btn-light" style="border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-linkedin-in" style="color: #0077b5;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: translateY(0); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div class="card-body p-4">
+                        <div class="position-relative mb-4">
+                            <img src="{% static 'blog/images/aditya.jpeg' %}" alt="Aditya" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </div>
+                        <h4 class="mb-2" style="font-weight: 700; color: #34495e;">Aditya</h4>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">Co-Founder & Content Director</p>
+                        <p class="mb-4" style="color: #555; font-size: 0.95rem;">As the co-founder of WriteAway, I lead the front-end development, crafting intuitive and visually appealing interfaces that enhance user engagement and bring our blog to life..</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://github.com/adii4040" target="_blank" class="btn btn-light" style="border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-github" style="color: #333;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aditya-singh-977a9726b/" target="_blank" class="btn btn-light" style="border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-linkedin-in" style="color: #0077b5;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

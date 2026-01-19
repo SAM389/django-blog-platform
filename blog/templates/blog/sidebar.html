@@ -1,0 +1,21 @@
+{% if user.is_authenticated %}
+<div class="content-section sidebar-box animate__animated animate__fadeInLeft">
+    <h3>Your Collections</h3>
+    <div class="sidebar-menu">
+        <a href="{% url 'liked-posts' %}" class="sidebar-item {% if request.resolver_match.url_name == 'liked-posts' %}active{% endif %}">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-heart"></i>
+                <span class="ml-2">Liked Posts</span>
+                <span class="badge badge-light ml-auto" id="liked-count">{{ user.blog_likes.count }}</span>
+            </div>
+        </a>
+        <a href="{% url 'bookmarked-posts' %}" class="sidebar-item {% if request.resolver_match.url_name == 'bookmarked-posts' %}active{% endif %}">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-bookmark"></i>
+                <span class="ml-2">Bookmarks</span>
+                <span class="badge badge-light ml-auto" id="bookmarked-count">{{ user.blog_bookmarks.count }}</span>
+            </div>
+        </a>
+    </div>
+</div>
+{% endif %} 
